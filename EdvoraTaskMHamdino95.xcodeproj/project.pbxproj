@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1001B4627906996000A6E59 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1001B4527906996000A6E59 /* README.md */; };
 		A177CCD9278E9436003B5990 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177CCD8278E9436003B5990 /* CustomTextField.swift */; };
 		A177CCE1278E983E003B5990 /* String+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177CCE0278E983E003B5990 /* String+Extentions.swift */; };
 		A177CCE4278EACF1003B5990 /* UIColor+extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A177CCE3278EACF1003B5990 /* UIColor+extentions.swift */; };
@@ -17,7 +18,6 @@
 		A1831082278FF68C005880A6 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831081278FF68C005880A6 /* CheckView.swift */; };
 		A1831085278FF73D005880A6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831084278FF73D005880A6 /* Constants.swift */; };
 		A1831088278FFFB5005880A6 /* UITextField+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1831087278FFFB5005880A6 /* UITextField+Extentions.swift */; };
-		A183108F27901990005880A6 /* import foobar  # returns 'words' foobar.pluralize('word')  # returns 'geese' foobar.pluralize('goose')  # returns 'phenomenon' foobar.singularize('phenomena') in Resources */ = {isa = PBXBuildFile; fileRef = A183108E27901990005880A6 /* import foobar  # returns 'words' foobar.pluralize('word')  # returns 'geese' foobar.pluralize('goose')  # returns 'phenomenon' foobar.singularize('phenomena') */; };
 		A1B1F438278D4DB300A9A3FD /* EdvoraTaskMHamdino95App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B1F437278D4DB300A9A3FD /* EdvoraTaskMHamdino95App.swift */; };
 		A1B1F43C278D4DB500A9A3FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B1F43B278D4DB500A9A3FD /* Assets.xcassets */; };
 		A1B1F43F278D4DB500A9A3FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1B1F43E278D4DB500A9A3FD /* Preview Assets.xcassets */; };
@@ -38,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1001B4527906996000A6E59 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A177CCD8278E9436003B5990 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		A177CCE0278E983E003B5990 /* String+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extentions.swift"; sourceTree = "<group>"; };
 		A177CCE3278EACF1003B5990 /* UIColor+extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extentions.swift"; sourceTree = "<group>"; };
@@ -48,7 +49,6 @@
 		A1831081278FF68C005880A6 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		A1831084278FF73D005880A6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A1831087278FFFB5005880A6 /* UITextField+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extentions.swift"; sourceTree = "<group>"; };
-		A183108E27901990005880A6 /* import foobar  # returns 'words' foobar.pluralize('word')  # returns 'geese' foobar.pluralize('goose')  # returns 'phenomenon' foobar.singularize('phenomena') */ = {isa = PBXFileReference; lastKnownFileType = text; path = "import foobar  # returns 'words' foobar.pluralize('word')  # returns 'geese' foobar.pluralize('goose')  # returns 'phenomenon' foobar.singularize('phenomena')"; sourceTree = "<group>"; };
 		A1B1F434278D4DB300A9A3FD /* EdvoraTaskMHamdino95.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdvoraTaskMHamdino95.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B1F437278D4DB300A9A3FD /* EdvoraTaskMHamdino95App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTaskMHamdino95App.swift; sourceTree = "<group>"; };
 		A1B1F43B278D4DB500A9A3FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1001B4127906901000A6E59 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1B1F437278D4DB300A9A3FD /* EdvoraTaskMHamdino95App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		A177CCD7278E941A003B5990 /* CustomTextFields */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,14 +196,14 @@
 		A1B1F436278D4DB300A9A3FD /* EdvoraTaskMHamdino95 */ = {
 			isa = PBXGroup;
 			children = (
+				A1B1F440278D4DB500A9A3FD /* Info.plist */,
+				A1001B4127906901000A6E59 /* App */,
 				A1B1F447278D4DF700A9A3FD /* DesignSystem */,
 				A1B1F49C278D4E3D00A9A3FD /* Resourse */,
 				A180FFD7278E088400555C22 /* Utils */,
 				A1B1F45E278D4E1900A9A3FD /* Scences */,
-				A1B1F437278D4DB300A9A3FD /* EdvoraTaskMHamdino95App.swift */,
-				A1B1F440278D4DB500A9A3FD /* Info.plist */,
 				A1B1F43D278D4DB500A9A3FD /* Preview Content */,
-				A183108E27901990005880A6 /* import foobar  # returns 'words' foobar.pluralize('word')  # returns 'geese' foobar.pluralize('goose')  # returns 'phenomenon' foobar.singularize('phenomena') */,
+				A1001B4527906996000A6E59 /* README.md */,
 			);
 			path = EdvoraTaskMHamdino95;
 			sourceTree = "<group>";
@@ -353,11 +361,11 @@
 			files = (
 				A1B1F4AD278D4E3D00A9A3FD /* Colors.xcassets in Resources */,
 				A1B1F4AE278D4E3D00A9A3FD /* CommonImages.xcassets in Resources */,
-				A183108F27901990005880A6 /* import foobar  # returns 'words' foobar.pluralize('word')  # returns 'geese' foobar.pluralize('goose')  # returns 'phenomenon' foobar.singularize('phenomena') in Resources */,
 				A1B1F4C5278D532200A9A3FD /* Inter-SemiBold.ttf in Resources */,
 				A1B1F4C4278D532200A9A3FD /* Inter-Regular.ttf in Resources */,
 				A1B1F43F278D4DB500A9A3FD /* Preview Assets.xcassets in Resources */,
 				A1B1F43C278D4DB500A9A3FD /* Assets.xcassets in Resources */,
+				A1001B4627906996000A6E59 /* README.md in Resources */,
 				A1B1F4B3278D4E3D00A9A3FD /* ldelete.json in Resources */,
 				A1B1F4C6278D532200A9A3FD /* Inter-Medium.ttf in Resources */,
 			);

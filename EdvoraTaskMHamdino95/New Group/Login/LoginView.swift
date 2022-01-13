@@ -44,6 +44,10 @@ struct LoginView: View {
             //Actions
             VStack (spacing:14){
                 ButtonAnimationView()
+                    .animation(Animation
+                                             .spring()
+                    .repeatCount(3,autoreverses: true))
+                    .offset(x: isAnimated ? -500 : 0)
                 HStack{
                     "Don’t have an account?".subheadlineText
                         .foregroundColor(DesignSystem.Colors.text.color.toColor)
