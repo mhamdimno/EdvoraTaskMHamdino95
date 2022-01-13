@@ -20,8 +20,8 @@ struct ButtonAnimationView: View {
                 .trim(from: 0, to: self.fullcircle ? 0.95 : 1)
                 .stroke(lineWidth: self.downloadButtonTapped ? 5 : 0)
                 .frame(width: self.downloadButtonTapped ? KcommonViewHeight  : nil, height: KcommonViewHeight)
-                .foregroundColor(downloadButtonTapped ? DesignSystem.Colors.primary.color.toColor : DesignSystem.Colors.primary.color.toColor)
-                .background(self.downloadButtonTapped ? .white : DesignSystem.Colors.primary.color.toColor)
+                .foregroundColor(downloadButtonTapped ? DesignSystem.Colors.primary.color : DesignSystem.Colors.primary.color)
+                .background(self.downloadButtonTapped ? .white : DesignSystem.Colors.primary.color)
                 .cornerRadius(self.downloadButtonTapped ? KcommonViewHeight/2 : KcommonCornerRadius)
                 .rotationEffect(Angle(degrees: self.loading ? 0 : -1440))
                 .onTapGesture {
@@ -33,7 +33,7 @@ struct ButtonAnimationView: View {
             
             if !downloadButtonTapped {
                 "Login".titleText
-                    .foregroundColor(DesignSystem.Colors.buttonText.color.toColor)
+                    .foregroundColor(DesignSystem.Colors.buttonText.color)
                     .onDisappear() {
                         self.startProcessing()
                     }
@@ -42,7 +42,7 @@ struct ButtonAnimationView: View {
             if completed {
                 CheckView()
                     .offset(x: -5, y: 9)
-                    .foregroundColor(DesignSystem.Colors.primary.color.toColor)
+                    .foregroundColor(DesignSystem.Colors.primary.color)
             }
         }
     }

@@ -5,7 +5,7 @@
 //  Created by A One Way To Allah on 9/30/21.
 //
 
-import UIKit
+import SwiftUI
 
 extension DesignSystem{
     
@@ -18,8 +18,8 @@ extension DesignSystem{
         case border
         case buttonText
 
-        var color: UIColor {
-            return UIColor(named: self.rawValue)!
+        var color: Color {
+            return Color(self.rawValue)
         }
     }
 }

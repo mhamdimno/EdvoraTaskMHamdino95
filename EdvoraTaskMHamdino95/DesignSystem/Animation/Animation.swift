@@ -5,17 +5,16 @@
 //  Created by A One Way To Allah on 10/5/21.
 //
 
-import UIKit
+import SwiftUI
 
-extension DesignSystem{
-    
-    enum Animation  {
-        case easeIn(d:AnimationDuration)
-        var animator: UIViewPropertyAnimator {
-            switch self {
-            case .easeIn(let d):
-                return UIViewPropertyAnimator(duration: d.timeInterval, timingParameters: AnimationTiming.easeIn.curve)
-            }
-        }
-    }
+extension Animation {
+    static let easeInOutRegular = Self.easeInOut(duration: AnimDuration.regular)
+    static let easeInOutSlow = Self.easeInOut(duration: AnimDuration.slow)
+    static let customCurve = Self.timingCurve(0, 0.8, 0.2, 1,
+                                            duration: AnimDuration.slow)
+    static let frameSpring = Self.interpolatingSpring(
+                                            mass: 0.05,
+                                             stiffness: 4.5,
+                                             damping: 2,
+                                             initialVelocity: 5)
 }

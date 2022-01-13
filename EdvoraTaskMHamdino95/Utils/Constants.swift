@@ -9,3 +9,6 @@ import SwiftUI
 
 let KcommonViewHeight:CGFloat=52
 let KcommonCornerRadius:CGFloat=12
+let Khorizontalpadding:CGFloat=36.5
+
+

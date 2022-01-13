@@ -31,24 +31,24 @@ struct CustomTextField: View {
     var body: some View {
         ZStack(alignment: .leading) {
             HStack {
-                leadingIconName?.toImage.foregroundColor(DesignSystem.Colors.inputLabel.color.toColor)
+                leadingIconName?.toImage.foregroundColor(DesignSystem.Colors.inputLabel.color)
                 TextField("", text: $text, onEditingChanged: { (edit) in
                     isEditing = edit
                 })
                 .secure(trainlingIconName != nil)
                 .keyboardType(keyboardType)
-                trainlingIconName?.toImage.foregroundColor(DesignSystem.Colors.primary.color.toColor)
+                trainlingIconName?.toImage.foregroundColor(DesignSystem.Colors.primary.color)
             }
             .padding()
-            .overlay(RoundedRectangle(cornerRadius: KcommonCornerRadius).stroke(isEditing ? DesignSystem.Colors.primary.color.toColor : DesignSystem.Colors.border.color.toColor, lineWidth: 1)
+            .overlay(RoundedRectangle(cornerRadius: KcommonCornerRadius).stroke(isEditing ? DesignSystem.Colors.primary.color : DesignSystem.Colors.border.color, lineWidth: 1)
                         .frame(height: textFieldHeight))
             .font(.init(trainlingIconName == nil ? DesignSystem.Typography.body.font:DesignSystem.Typography.caption.font))
-            .accentColor(isEditing ? DesignSystem.Colors.border.color.toColor : DesignSystem.Colors.border.color.toColor)
+            .accentColor(isEditing ? DesignSystem.Colors.border.color : DesignSystem.Colors.border.color)
             .animation(.easeInOut)
-            .background(DesignSystem.Colors.background.color.toColor)
+            .background(DesignSystem.Colors.background.color)
             //Floating Placeholder
             placeHolderText.captionText.padding([.leading,.trailing],5)
-                .foregroundColor(DesignSystem.Colors.inputLabel.color.toColor)
+                .foregroundColor(DesignSystem.Colors.inputLabel.color)
                 .background(Color(.systemBackground))
             .padding(
                      EdgeInsets(top: 8, leading:15, bottom: textFieldHeight, trailing: 0)

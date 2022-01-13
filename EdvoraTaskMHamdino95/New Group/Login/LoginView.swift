@@ -22,10 +22,8 @@ struct LoginView: View {
         VStack {
             //Logo
             AuthLogo()
-                .animation(Animation
-                                         .spring()
-                                         .repeatCount(3,autoreverses: true))
-                             .offset(x: isAnimated ? 500 : 0)
+                .scaleEffect(isAnimated ? 0.5 : 1)
+                .animation(Animation.easeInOutSlow.repeatForever(autoreverses: true))
             
             Spacer()
 
@@ -36,7 +34,7 @@ struct LoginView: View {
             
             "Forgotten password?"
                 .subheadlineText
-                .foregroundColor(DesignSystem.Colors.text.color.toColor)
+                .foregroundColor(DesignSystem.Colors.text.color)
                 .frame(maxWidth: .infinity, alignment: .trailing)
             
             Spacer()
@@ -44,21 +42,20 @@ struct LoginView: View {
             //Actions
             VStack (spacing:14){
                 ButtonAnimationView()
-                    .animation(Animation
-                                             .spring()
-                    .repeatCount(3,autoreverses: true))
-                    .offset(x: isAnimated ? -500 : 0)
+                    .animation(Animation.frameSpring)
+                    .frame(width: isAnimated ? 80 : nil)
                 HStack{
                     "Don’t have an account?".subheadlineText
-                        .foregroundColor(DesignSystem.Colors.text.color.toColor)
+                        .foregroundColor(DesignSystem.Colors.text.color)
                     "Sign up".subheadlineText
-                        .foregroundColor(DesignSystem.Colors.text.color.toColor)
+                        .foregroundColor(DesignSystem.Colors.text.color)
                         .fontWeight(.bold)
                 }
             }
            
 
-        }.padding(36.5)
+        }.padding(Khorizontalpadding)
+        
         .onAppear{
                 isAnimated=false
           
